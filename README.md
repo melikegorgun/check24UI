@@ -18,7 +18,7 @@ But you need to download Chrome Version 101.0 and Firefox 97.0 browsers on your 
 # How to use
 To run tests, `mvn clean install` command should be run.
 This command will run TestNG with Testng.xml config.
-Or directly right click on Testng.xml file and Run via TestNG.
+Or directly right click on Testng.xml file and run via TestNG.
 No need to configure anything with TestNG.xml file.
 But if you want to change test data you can do it into Testng.xml via below data parameters:
 ```
