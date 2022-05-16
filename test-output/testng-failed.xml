@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Selenium]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Chrome Test(failed)">
+    <parameter name="number" value="+49 171 1234567"/>
+    <parameter name="surName" value="Gor"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="driverPath" value="src/Drivers/chromedriver.exe"/>
+    <parameter name="name" value="Mel"/>
+    <parameter name="birthDate" value="01.01.1990"/>
+    <parameter name="email" value="m@gmail.com"/>
+    <classes>
+      <class name="testSteps.PersonalInfoPageTest">
+        <methods>
+          <include name="Should_CheckNoErrorMessagesWithValidValues" invocation-numbers="0"/>
+          <include name="passToTheResultPageWithSearchText"/>
+          <include name="enterAsGuest"/>
+          <include name="Should_CheckErrorMessages"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testSteps.PersonalInfoPageTest -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [Selenium] -->

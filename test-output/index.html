@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Selenium" class="navigator-link">
+              <span class="suite-name border-failed">Selenium</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Selenium" class="navigator-link ">
+                    <span>C:\Users\melike.gorgun\check24UI\Testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Selenium" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Selenium" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Selenium" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Selenium" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Selenium" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Selenium" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">14 methods, 3 failed,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Selenium" class="hide-methods failed suite-Selenium"> (hide)</a> <!-- hide-methods failed suite-Selenium -->
+                      <a href="#" panel-name="suite-Selenium" class="show-methods failed suite-Selenium"> (show)</a> <!-- show-methods failed suite-Selenium -->
+                    </span>
+                    <div class="method-list-content failed suite-Selenium">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Selenium" title="testSteps.PersonalInfoPageTest" class="method navigator-link" hash-for-method="Should_CheckErrorMessages">Should_CheckErrorMessages</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Selenium" title="testSteps.PersonalInfoPageTest" class="method navigator-link" hash-for-method="Should_CheckNoErrorMessagesWithValidValues(Mel, Gor, 01.01.1990, +49 171 1234567)">Should_CheckNoErrorMessagesWithValidValues(Mel, Gor, 01.01.1990, +49 171 1234567)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Selenium" title="testSteps.PersonalInfoPageTest" class="method navigator-link" hash-for-method="enterAsGuest">enterAsGuest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Selenium -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Selenium" class="hide-methods passed suite-Selenium"> (hide)</a> <!-- hide-methods passed suite-Selenium -->
+                      <a href="#" panel-name="suite-Selenium" class="show-methods passed suite-Selenium"> (show)</a> <!-- show-methods passed suite-Selenium -->
+                    </span>
+                    <div class="method-list-content passed suite-Selenium">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Selenium" title="testSteps.PersonalInfoPageTest" class="method navigator-link" hash-for-method="Should_CheckErrorMessages">Should_CheckErrorMessages</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Selenium" title="testSteps.PersonalInfoPageTest" class="method navigator-link" hash-for-method="Should_CheckNoErrorMessagesWithValidValues(Mel, Gor, 01.01.1990, +49 171 1234567)">Should_CheckNoErrorMessagesWithValidValues(Mel, Gor, 01.01.1990, +49 171 1234567)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Selenium" title="testSteps.CreditCardResultPageTest" class="method navigator-link" hash-for-method="Should_CheckPPSETCookie">Should_CheckPPSETCookie</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Selenium" title="testSteps.CreditCardResultPageTest" class="method navigator-link" hash-for-method="Should_CheckPPSETCookie">Should_CheckPPSETCookie</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Selenium" title="testSteps.CreditCardResultPageTest" class="method navigator-link" hash-for-method="clickContinueButton">clickContinueButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Selenium" title="testSteps.CreditCardResultPageTest" class="method navigator-link" hash-for-method="clickContinueButton">clickContinueButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Selenium" title="testSteps.PersonalInfoPageTest" class="method navigator-link" hash-for-method="contToWelcome">contToWelcome</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Selenium" title="testSteps.PersonalInfoPageTest" class="method navigator-link" hash-for-method="contToWelcome">contToWelcome</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Selenium" title="testSteps.PersonalInfoPageTest" class="method navigator-link" hash-for-method="enterAsGuest">enterAsGuest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Selenium" title="testSteps.PersonalInfoPageTest" class="method navigator-link" hash-for-method="sendKeysToEmail(m@gmail.com)">sendKeysToEmail(m@gmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Selenium" title="testSteps.PersonalInfoPageTest" class="method navigator-link" hash-for-method="sendKeysToEmail(m@gmail.com)">sendKeysToEmail(m@gmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Selenium -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Selenium" class="panel Selenium">
+          <div class="suite-Selenium-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testSteps.PersonalInfoPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_CheckErrorMessages">
+                  </a> <!-- Should_CheckErrorMessages -->
+                  <span class="method-name">Should_CheckErrorMessages</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;styles__ButtonWrapper-sc-1solng-1 dwSWhP&apos;]&quot;}
+  (Session info: chrome=101.0.4951.64)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SLVYDEV043&apos;, ip: &apos;192.168.1.23&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\MELIKE~1.GOR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56729}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: da14d9fc164fb1cf6512197ee9bd3839
+*** Element info: {Using=xpath, value=//div[@class=&apos;styles__ButtonWrapper-sc-1solng-1 dwSWhP&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at pageObjects.PersonalInfoPage.continueFromInfoForm(PersonalInfoPage.java:91)
+	at testSteps.PersonalInfoPageTest.Should_CheckErrorMessages(PersonalInfoPageTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_CheckNoErrorMessagesWithValidValues(Mel, Gor, 01.01.1990, +49 171 1234567)">
+                  </a> <!-- Should_CheckNoErrorMessagesWithValidValues(Mel, Gor, 01.01.1990, +49 171 1234567) -->
+                  <span class="method-name">Should_CheckNoErrorMessagesWithValidValues</span>
+                  <span class="parameters">(Mel, Gor, 01.01.1990, +49 171 1234567)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[@for=&apos;GENDER_FEMALE&apos;]&quot;}
+  (Session info: chrome=101.0.4951.64)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SLVYDEV043&apos;, ip: &apos;192.168.1.23&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\MELIKE~1.GOR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56729}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: da14d9fc164fb1cf6512197ee9bd3839
+*** Element info: {Using=xpath, value=//label[@for=&apos;GENDER_FEMALE&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at pageObjects.PersonalInfoPage.fillFormWithValues(PersonalInfoPage.java:96)
+	at testSteps.PersonalInfoPageTest.Should_CheckNoErrorMessagesWithValidValues(PersonalInfoPageTest.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterAsGuest">
+                  </a> <!-- enterAsGuest -->
+                  <span class="method-name">enterAsGuest</span>
+                  <div class="stack-trace">org.openqa.selenium.JavascriptException: javascript error: d.elementFromPoint is not a function
+  (Session info: chrome=101.0.4951.64)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SLVYDEV043&apos;, ip: &apos;192.168.1.23&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\MELIKE~1.GOR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56729}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: da14d9fc164fb1cf6512197ee9bd3839
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at pageObjects.PersonalInfoPage.goAsGuest(PersonalInfoPage.java:79)
+	at testSteps.PersonalInfoPageTest.enterAsGuest(PersonalInfoPageTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selenium-class-failed -->
+          <div class="suite-Selenium-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testSteps.PersonalInfoPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_CheckErrorMessages">
+                  </a> <!-- Should_CheckErrorMessages -->
+                  <span class="method-name">Should_CheckErrorMessages</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_CheckNoErrorMessagesWithValidValues(Mel, Gor, 01.01.1990, +49 171 1234567)">
+                  </a> <!-- Should_CheckNoErrorMessagesWithValidValues(Mel, Gor, 01.01.1990, +49 171 1234567) -->
+                  <span class="method-name">Should_CheckNoErrorMessagesWithValidValues</span>
+                  <span class="parameters">(Mel, Gor, 01.01.1990, +49 171 1234567)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="contToWelcome">
+                  </a> <!-- contToWelcome -->
+                  <span class="method-name">contToWelcome</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="contToWelcome">
+                  </a> <!-- contToWelcome -->
+                  <span class="method-name">contToWelcome</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterAsGuest">
+                  </a> <!-- enterAsGuest -->
+                  <span class="method-name">enterAsGuest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendKeysToEmail(m@gmail.com)">
+                  </a> <!-- sendKeysToEmail(m@gmail.com) -->
+                  <span class="method-name">sendKeysToEmail</span>
+                  <span class="parameters">(m@gmail.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendKeysToEmail(m@gmail.com)">
+                  </a> <!-- sendKeysToEmail(m@gmail.com) -->
+                  <span class="method-name">sendKeysToEmail</span>
+                  <span class="parameters">(m@gmail.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selenium-class-passed -->
+          <div class="suite-Selenium-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testSteps.CreditCardResultPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_CheckPPSETCookie">
+                  </a> <!-- Should_CheckPPSETCookie -->
+                  <span class="method-name">Should_CheckPPSETCookie</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_CheckPPSETCookie">
+                  </a> <!-- Should_CheckPPSETCookie -->
+                  <span class="method-name">Should_CheckPPSETCookie</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickContinueButton">
+                  </a> <!-- clickContinueButton -->
+                  <span class="method-name">clickContinueButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickContinueButton">
+                  </a> <!-- clickContinueButton -->
+                  <span class="method-name">clickContinueButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selenium-class-passed -->
+        </div> <!-- panel Selenium -->
+        <div panel-name="test-xml-Selenium" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\melike.gorgun\check24UI\Testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Selenium&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Chrome Test&quot;&gt;
+    &lt;parameter name=&quot;number&quot; value=&quot;+49 171 1234567&quot;/&gt;
+    &lt;parameter name=&quot;surName&quot; value=&quot;Gor&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;driverPath&quot; value=&quot;src/Drivers/chromedriver.exe&quot;/&gt;
+    &lt;parameter name=&quot;name&quot; value=&quot;Mel&quot;/&gt;
+    &lt;parameter name=&quot;birthDate&quot; value=&quot;01.01.1990&quot;/&gt;
+    &lt;parameter name=&quot;email&quot; value=&quot;m@gmail.com&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testSteps.PersonalInfoPageTest&quot;/&gt;
+      &lt;class name=&quot;testSteps.CreditCardResultPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Chrome Test --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Firefox Test&quot;&gt;
+    &lt;parameter name=&quot;number&quot; value=&quot;+49 171 1234567&quot;/&gt;
+    &lt;parameter name=&quot;surName&quot; value=&quot;Gor&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;driverPath&quot; value=&quot;src/Drivers/geckodriver.exe&quot;/&gt;
+    &lt;parameter name=&quot;name&quot; value=&quot;Mel&quot;/&gt;
+    &lt;parameter name=&quot;birthDate&quot; value=&quot;01.01.1990&quot;/&gt;
+    &lt;parameter name=&quot;email&quot; value=&quot;m@gmail.com&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testSteps.PersonalInfoPageTest&quot;/&gt;
+      &lt;class name=&quot;testSteps.CreditCardResultPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Firefox Test --&gt;
+&lt;/suite&gt; &lt;!-- Selenium --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Selenium" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Selenium</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Chrome Test (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Firefox Test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Selenium" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Selenium</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Selenium" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Selenium</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Selenium');
+function tableData_Selenium() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(14);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Should_CheckNoErrorMessagesWithValidValues')
+data.setCell(0, 2, 'testSteps.PersonalInfoPageTest')
+data.setCell(0, 3, 3819);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'enterAsGuest')
+data.setCell(1, 2, 'testSteps.PersonalInfoPageTest')
+data.setCell(1, 3, 3591);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Should_CheckErrorMessages')
+data.setCell(2, 2, 'testSteps.PersonalInfoPageTest')
+data.setCell(2, 3, 3330);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'enterAsGuest')
+data.setCell(3, 2, 'testSteps.PersonalInfoPageTest')
+data.setCell(3, 3, 3085);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'clickContinueButton')
+data.setCell(4, 2, 'testSteps.CreditCardResultPageTest')
+data.setCell(4, 3, 929);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'clickContinueButton')
+data.setCell(5, 2, 'testSteps.CreditCardResultPageTest')
+data.setCell(5, 3, 908);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Should_CheckPPSETCookie')
+data.setCell(6, 2, 'testSteps.CreditCardResultPageTest')
+data.setCell(6, 3, 489);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Should_CheckPPSETCookie')
+data.setCell(7, 2, 'testSteps.CreditCardResultPageTest')
+data.setCell(7, 3, 478);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'sendKeysToEmail')
+data.setCell(8, 2, 'testSteps.PersonalInfoPageTest')
+data.setCell(8, 3, 93);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'contToWelcome')
+data.setCell(9, 2, 'testSteps.PersonalInfoPageTest')
+data.setCell(9, 3, 78);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'contToWelcome')
+data.setCell(10, 2, 'testSteps.PersonalInfoPageTest')
+data.setCell(10, 3, 72);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'sendKeysToEmail')
+data.setCell(11, 2, 'testSteps.PersonalInfoPageTest')
+data.setCell(11, 3, 48);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'Should_CheckErrorMessages')
+data.setCell(12, 2, 'testSteps.PersonalInfoPageTest')
+data.setCell(12, 3, 23);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'Should_CheckNoErrorMessagesWithValidValues')
+data.setCell(13, 2, 'testSteps.PersonalInfoPageTest')
+data.setCell(13, 3, 22);
+window.suiteTableData['Selenium']= { tableData: data, tableDiv: 'times-div-Selenium'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <div id="times-div-Selenium">
+              </div> <!-- times-div-Selenium -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Selenium" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Selenium</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Selenium" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Selenium" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testSteps.CreditCardResultPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">openHomePage(chrome, src/Drivers/chromedriver.exe)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">openHomePage(firefox, src/Drivers/geckodriver.exe)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testSteps.PersonalInfoPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">passToTheResultPageWithSearchText(chrome, src/Drivers/chromedriver.exe)</span>
+                <span class="method-start">4207 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">passToTheResultPageWithSearchText(firefox, src/Drivers/geckodriver.exe)</span>
+                <span class="method-start">6258 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testSteps.CreditCardResultPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Should_CheckPPSETCookie</span>
+                <span class="method-start">12750 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickContinueButton</span>
+                <span class="method-start">13242 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testSteps.PersonalInfoPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">sendKeysToEmail(m@gmail.com)</span>
+                <span class="method-start">14172 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">contToWelcome</span>
+                <span class="method-start">14266 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">enterAsGuest</span>
+                <span class="method-start">14345 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testSteps.CreditCardResultPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Should_CheckPPSETCookie</span>
+                <span class="method-start">16607 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickContinueButton</span>
+                <span class="method-start">17086 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testSteps.PersonalInfoPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Should_CheckErrorMessages</span>
+                <span class="method-start">17439 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Should_CheckNoErrorMessagesWithValidValues(Mel, Gor, 01.01.1990, +49 171 1234567)</span>
+                <span class="method-start">17464 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testSteps.CreditCardResultPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">close</span>
+                <span class="method-start">17490 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testSteps.PersonalInfoPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">close</span>
+                <span class="method-start">17738 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="test-method">
+                <span class="method-name">sendKeysToEmail(m@gmail.com)</span>
+                <span class="method-start">17995 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">contToWelcome</span>
+                <span class="method-start">18043 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterAsGuest</span>
+                <span class="method-start">18115 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Should_CheckErrorMessages</span>
+                <span class="method-start">21706 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Should_CheckNoErrorMessagesWithValidValues(Mel, Gor, 01.01.1990, +49 171 1234567)</span>
+                <span class="method-start">25036 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testSteps.CreditCardResultPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">close</span>
+                <span class="method-start">28856 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testSteps.PersonalInfoPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">close</span>
+                <span class="method-start">29704 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

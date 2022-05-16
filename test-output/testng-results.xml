@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="11" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-16T00:20:25 EET" name="Selenium" finished-at="2022-05-16T00:20:56 EET" duration-ms="30653">
+    <groups>
+    </groups>
+    <test started-at="2022-05-16T00:20:25 EET" name="Chrome Test" finished-at="2022-05-16T00:20:43 EET" duration-ms="17864">
+      <class name="testSteps.CreditCardResultPageTest">
+        <test-method is-config="true" signature="openHomePage(java.lang.String,java.lang.String)[pri:0, instance:testSteps.CreditCardResultPageTest@f5958c9]" started-at="2022-05-16T00:20:25 EET" name="openHomePage" finished-at="2022-05-16T00:20:30 EET" duration-ms="4206" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[src/Drivers/chromedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openHomePage -->
+        <test-method signature="Should_CheckPPSETCookie()[pri:0, instance:testSteps.CreditCardResultPageTest@f5958c9]" started-at="2022-05-16T00:20:38 EET" name="Should_CheckPPSETCookie" finished-at="2022-05-16T00:20:39 EET" duration-ms="489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_CheckPPSETCookie -->
+        <test-method signature="clickContinueButton()[pri:0, instance:testSteps.CreditCardResultPageTest@f5958c9]" started-at="2022-05-16T00:20:39 EET" name="clickContinueButton" finished-at="2022-05-16T00:20:40 EET" duration-ms="929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickContinueButton -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testSteps.CreditCardResultPageTest@f5958c9]" started-at="2022-05-16T00:20:43 EET" name="close" finished-at="2022-05-16T00:20:43 EET" duration-ms="248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testSteps.CreditCardResultPageTest -->
+      <class name="testSteps.PersonalInfoPageTest">
+        <test-method is-config="true" signature="passToTheResultPageWithSearchText(java.lang.String,java.lang.String)[pri:0, instance:testSteps.PersonalInfoPageTest@217ed35e]" started-at="2022-05-16T00:20:30 EET" name="passToTheResultPageWithSearchText" finished-at="2022-05-16T00:20:38 EET" duration-ms="8523" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[src/Drivers/chromedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passToTheResultPageWithSearchText -->
+        <test-method signature="sendKeysToEmail(java.lang.String)[pri:1, instance:testSteps.PersonalInfoPageTest@217ed35e]" started-at="2022-05-16T00:20:40 EET" name="sendKeysToEmail" finished-at="2022-05-16T00:20:40 EET" duration-ms="93" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[m@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendKeysToEmail -->
+        <test-method signature="contToWelcome()[pri:2, instance:testSteps.PersonalInfoPageTest@217ed35e]" started-at="2022-05-16T00:20:40 EET" name="contToWelcome" finished-at="2022-05-16T00:20:40 EET" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contToWelcome -->
+        <test-method signature="enterAsGuest()[pri:3, instance:testSteps.PersonalInfoPageTest@217ed35e]" started-at="2022-05-16T00:20:40 EET" name="enterAsGuest" finished-at="2022-05-16T00:20:43 EET" duration-ms="3085" status="FAIL">
+          <exception class="org.openqa.selenium.JavascriptException">
+            <message>
+              <![CDATA[javascript error: d.elementFromPoint is not a function
+  (Session info: chrome=101.0.4951.64)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLVYDEV043', ip: '192.168.1.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\MELIKE~1.GOR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56729}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: da14d9fc164fb1cf6512197ee9bd3839]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: d.elementFromPoint is not a function
+  (Session info: chrome=101.0.4951.64)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLVYDEV043', ip: '192.168.1.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\MELIKE~1.GOR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56729}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: da14d9fc164fb1cf6512197ee9bd3839
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy12.click(Unknown Source)
+at pageObjects.PersonalInfoPage.goAsGuest(PersonalInfoPage.java:79)
+at testSteps.PersonalInfoPageTest.enterAsGuest(PersonalInfoPageTest.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.JavascriptException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterAsGuest -->
+        <test-method signature="Should_CheckErrorMessages()[pri:4, instance:testSteps.PersonalInfoPageTest@217ed35e]" started-at="2022-05-16T00:20:43 EET" name="Should_CheckErrorMessages" finished-at="2022-05-16T00:20:43 EET" duration-ms="23" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='styles__ButtonWrapper-sc-1solng-1 dwSWhP']"}
+  (Session info: chrome=101.0.4951.64)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLVYDEV043', ip: '192.168.1.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\MELIKE~1.GOR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56729}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: da14d9fc164fb1cf6512197ee9bd3839
+*** Element info: {Using=xpath, value=//div[@class='styles__ButtonWrapper-sc-1solng-1 dwSWhP']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='styles__ButtonWrapper-sc-1solng-1 dwSWhP']"}
+  (Session info: chrome=101.0.4951.64)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLVYDEV043', ip: '192.168.1.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\MELIKE~1.GOR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56729}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: da14d9fc164fb1cf6512197ee9bd3839
+*** Element info: {Using=xpath, value=//div[@class='styles__ButtonWrapper-sc-1solng-1 dwSWhP']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy12.click(Unknown Source)
+at pageObjects.PersonalInfoPage.continueFromInfoForm(PersonalInfoPage.java:91)
+at testSteps.PersonalInfoPageTest.Should_CheckErrorMessages(PersonalInfoPageTest.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_CheckErrorMessages -->
+        <test-method signature="Should_CheckNoErrorMessagesWithValidValues(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:testSteps.PersonalInfoPageTest@217ed35e]" started-at="2022-05-16T00:20:43 EET" name="Should_CheckNoErrorMessagesWithValidValues" finished-at="2022-05-16T00:20:43 EET" duration-ms="22" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mel]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Gor]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[01.01.1990]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[+49 171 1234567]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//label[@for='GENDER_FEMALE']"}
+  (Session info: chrome=101.0.4951.64)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLVYDEV043', ip: '192.168.1.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\MELIKE~1.GOR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56729}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: da14d9fc164fb1cf6512197ee9bd3839
+*** Element info: {Using=xpath, value=//label[@for='GENDER_FEMALE']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[@for='GENDER_FEMALE']"}
+  (Session info: chrome=101.0.4951.64)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLVYDEV043', ip: '192.168.1.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\MELIKE~1.GOR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56729}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: da14d9fc164fb1cf6512197ee9bd3839
+*** Element info: {Using=xpath, value=//label[@for='GENDER_FEMALE']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy12.click(Unknown Source)
+at pageObjects.PersonalInfoPage.fillFormWithValues(PersonalInfoPage.java:96)
+at testSteps.PersonalInfoPageTest.Should_CheckNoErrorMessagesWithValidValues(PersonalInfoPageTest.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_CheckNoErrorMessagesWithValidValues -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testSteps.PersonalInfoPageTest@217ed35e]" started-at="2022-05-16T00:20:43 EET" name="close" finished-at="2022-05-16T00:20:43 EET" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testSteps.PersonalInfoPageTest -->
+    </test> <!-- Chrome Test -->
+    <test started-at="2022-05-16T00:20:25 EET" name="Firefox Test" finished-at="2022-05-16T00:20:56 EET" duration-ms="30653">
+      <class name="testSteps.CreditCardResultPageTest">
+        <test-method is-config="true" signature="openHomePage(java.lang.String,java.lang.String)[pri:0, instance:testSteps.CreditCardResultPageTest@5e5d171f]" started-at="2022-05-16T00:20:25 EET" name="openHomePage" finished-at="2022-05-16T00:20:32 EET" duration-ms="6258" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[src/Drivers/geckodriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openHomePage -->
+        <test-method signature="Should_CheckPPSETCookie()[pri:0, instance:testSteps.CreditCardResultPageTest@5e5d171f]" started-at="2022-05-16T00:20:42 EET" name="Should_CheckPPSETCookie" finished-at="2022-05-16T00:20:42 EET" duration-ms="478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_CheckPPSETCookie -->
+        <test-method signature="clickContinueButton()[pri:0, instance:testSteps.CreditCardResultPageTest@5e5d171f]" started-at="2022-05-16T00:20:42 EET" name="clickContinueButton" finished-at="2022-05-16T00:20:43 EET" duration-ms="908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickContinueButton -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testSteps.CreditCardResultPageTest@5e5d171f]" started-at="2022-05-16T00:20:54 EET" name="close" finished-at="2022-05-16T00:20:55 EET" duration-ms="848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testSteps.CreditCardResultPageTest -->
+      <class name="testSteps.PersonalInfoPageTest">
+        <test-method is-config="true" signature="passToTheResultPageWithSearchText(java.lang.String,java.lang.String)[pri:0, instance:testSteps.PersonalInfoPageTest@7770f470]" started-at="2022-05-16T00:20:32 EET" name="passToTheResultPageWithSearchText" finished-at="2022-05-16T00:20:42 EET" duration-ms="10348" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[src/Drivers/geckodriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passToTheResultPageWithSearchText -->
+        <test-method signature="sendKeysToEmail(java.lang.String)[pri:1, instance:testSteps.PersonalInfoPageTest@7770f470]" started-at="2022-05-16T00:20:43 EET" name="sendKeysToEmail" finished-at="2022-05-16T00:20:43 EET" duration-ms="48" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[m@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendKeysToEmail -->
+        <test-method signature="contToWelcome()[pri:2, instance:testSteps.PersonalInfoPageTest@7770f470]" started-at="2022-05-16T00:20:43 EET" name="contToWelcome" finished-at="2022-05-16T00:20:43 EET" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contToWelcome -->
+        <test-method signature="enterAsGuest()[pri:3, instance:testSteps.PersonalInfoPageTest@7770f470]" started-at="2022-05-16T00:20:43 EET" name="enterAsGuest" finished-at="2022-05-16T00:20:47 EET" duration-ms="3591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterAsGuest -->
+        <test-method signature="Should_CheckErrorMessages()[pri:4, instance:testSteps.PersonalInfoPageTest@7770f470]" started-at="2022-05-16T00:20:47 EET" name="Should_CheckErrorMessages" finished-at="2022-05-16T00:20:50 EET" duration-ms="3330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_CheckErrorMessages -->
+        <test-method signature="Should_CheckNoErrorMessagesWithValidValues(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:testSteps.PersonalInfoPageTest@7770f470]" started-at="2022-05-16T00:20:50 EET" name="Should_CheckNoErrorMessagesWithValidValues" finished-at="2022-05-16T00:20:54 EET" duration-ms="3819" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mel]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Gor]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[01.01.1990]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[+49 171 1234567]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_CheckNoErrorMessagesWithValidValues -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testSteps.PersonalInfoPageTest@7770f470]" started-at="2022-05-16T00:20:55 EET" name="close" finished-at="2022-05-16T00:20:56 EET" duration-ms="944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testSteps.PersonalInfoPageTest -->
+    </test> <!-- Firefox Test -->
+  </suite> <!-- Selenium -->
+</testng-results>
